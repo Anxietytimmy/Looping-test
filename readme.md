@@ -1,8 +1,12 @@
 ## Looping test homebrew for multiple consoles
-This currently runs on ds, dsi, old 3ds, new 3ds, and switch (switch hangs on black screen)
+2. Currently supported
+   - ds/dsi 
+   - 3ds/new 3ds 
+   - GBA
+   - Wii
+   - Gamecube 
 1. Planned future ports
    - Psp
    - Ps2
-   - Wii
    - Wii U
-   
+   - Ps1
