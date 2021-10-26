@@ -5,10 +5,12 @@
 ---------------------------------------------------------------------------------*/
 #include <nds.h>
 #include <stdio.h>
+#include <time.h>
 //---------------------------------------------------------------------------------
 int main(void) {
 //---------------------------------------------------------------------------------
 	consoleDemoInit();
+	int a;
 
 	PrintConsole topScreen;
 	
@@ -22,8 +24,17 @@ int main(void) {
 
 
 	consoleSelect(&topScreen);
-
 	
+	clock_t start = clock();
+   for( a = 10; a < 20; a = a + 1 ){
+      printf("value of a: %d\n", a);
+   }
+	
+	clock_t stop = clock();
+    double elapsed = (double)(stop - start) * 1000.0 / CLOCKS_PER_SEC;
+    printf("Time elapsed in ms: %f", elapsed);
+
+
 	while(1) {
 		swiWaitForVBlank();
 		scanKeys();
