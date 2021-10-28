@@ -26,7 +26,7 @@ int main(void) {
 	consoleSelect(&topScreen);
 	
 	clock_t start = clock();
-   for( a = 10; a < 20; a = a + 1 ){
+    for( a = 1; a < 9999; a = a + 1 ){
       printf("value of a: %d\n", a);
    }
 	
