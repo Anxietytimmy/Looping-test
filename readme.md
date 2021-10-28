@@ -2,6 +2,8 @@
 2. Currently supported
    - ds/dsi 
    - 3ds/new 3ds 
+   - Wii
+   - Gamecube
 
 1. Planned future ports
    - Psp
@@ -9,5 +11,3 @@
    - Wii U
    - Ps1
    - GBA
-   - Wii
-   - Gamecube 
