@@ -4,13 +4,14 @@
    - 3ds/new 3ds 
    - Wii
    - Gamecube
+   - GBA
+   - Wii U (partiatly) 
 
 2. Planned future ports
    - Psp
    - Ps2
-   - Wii U
    - Ps1
-   - GBA
    - Gbc
    - gb
    - ps3
+   - Dreamcast
