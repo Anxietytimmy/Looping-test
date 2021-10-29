@@ -18,6 +18,8 @@ main(int argc, char **argv)
 
    ;WHBProcInit();
    WHBLogConsoleInit();
+   WHBLogPrintf("Built on 10/29/2021");
+
 	for (a = 10; a < 99999; a = a + 1) {
 		WHBLogPrintf("value of a: %d\n", a);
 	}
