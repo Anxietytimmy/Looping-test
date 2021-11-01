@@ -6,6 +6,7 @@
    - Gamecube
    - GBA
    - Wii U (partiatly) 
+   - Switch (Broken)
 
 2. Planned future ports
    - Psp
@@ -15,3 +16,4 @@
    - gb
    - ps3
    - Dreamcast
+   - PS Vita 
