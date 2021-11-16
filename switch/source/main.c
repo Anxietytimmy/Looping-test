@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+#include <unistd.h> 
 
 // Include the main libnx system header, for Switch development
 #include <switch.h>
@@ -27,14 +28,11 @@ int main(int argc, char* argv[])
 
     // Other initialization goes here. As a demonstration, we print hello world.
     printf("Hello World!\n");
-    clock_t start = clock();
-	for (a = 10; a < 9999; a = a + 1) {
+    sleep(5);
+	for (a = 10; a < 999; a = a + 1) {
 		printf("value of a : % d\n", a);
 	}
-    
-    clock_t stop = clock();
-    double elapsed = (double)(stop - start) * 1000.0 / CLOCKS_PER_SEC;
-    printf("Time elapsed in ms: %f", elapsed);
+
 
     
 
