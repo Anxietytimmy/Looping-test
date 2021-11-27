@@ -17,6 +17,7 @@ int main(int argc, char* argv[])
     // If on the other hand you want to write an OpenGL based application,
     //   take a look at the graphics/opengl set of examples, which uses EGL instead.
     consoleInit(NULL);
+
     int a;
 
     // Configure our supported input layout: a single player with standard controller styles
@@ -28,13 +29,14 @@ int main(int argc, char* argv[])
 
     // Other initialization goes here. As a demonstration, we print hello world.
     printf("Hello World!\n");
-    sleep(5);
-	for (a = 10; a < 999; a = a + 1) {
-		printf("value of a : % d\n", a);
-	}
+    printf("Press A to start looping\n");            
 
-
-    
+    padUpdate(&pad);
+    u64 kDown = padGetButtonsDown(&pad); 
+    if (kDown & HidNpadButton_A);    
+    for( a = 1; a < 9999; a = a + 1 ){
+      printf("value of a: %d\n", a);
+    }
 
     // Main loop
     while (appletMainLoop())
@@ -45,6 +47,7 @@ int main(int argc, char* argv[])
         // padGetButtonsDown returns the set of buttons that have been
         // newly pressed in this frame compared to the previous one
         u64 kDown = padGetButtonsDown(&pad);
+
 
         if (kDown & HidNpadButton_Plus)
             break; // break in order to return to hbmenu
