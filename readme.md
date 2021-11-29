@@ -5,8 +5,8 @@
    - Wii
    - Gamecube
    - GBA
-   - Wii U (partiatly) 
-   - Switch (Broken)
+   - Wii U 
+   - Switch 
 
 2. Planned future ports
    - Psp
