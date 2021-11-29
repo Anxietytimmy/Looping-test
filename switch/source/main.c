@@ -32,12 +32,12 @@ int main(int argc, char* argv[])
     printf("Press A to start looping\n");            
 
     padUpdate(&pad);
-    u64 kDown = padGetButtonsDown(&pad); 
-    if (kDown & HidNpadButton_A);    
-    for( a = 1; a < 9999; a = a + 1 ){
-      printf("value of a: %d\n", a);
+    u64 kDown = padGetButtonsDown(&pad);{ 
+      if (kDown & HidNpadButton_A);    
+      for( a = 1; a < 9999; a = a + 1 ){
+         printf("value of a: %d\n", a);
+       }
     }
-
     // Main loop
     while (appletMainLoop())
     {
