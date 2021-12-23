@@ -38,6 +38,8 @@ int main(int argc, char* argv[])
             printf("value of a: %d\n", a);
        }
     }
+    // add this in case the loop doesnt work 
+    printf("endloop")
     // Main loop
     while (appletMainLoop())
     {
