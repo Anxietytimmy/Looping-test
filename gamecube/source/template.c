@@ -14,14 +14,15 @@ int a;
 int main(int argc, char **argv) {
 
 	xfb = Initialise();
-	clock_t start = clock();
-	for (a = 10; a < 9999; a = a + 1) {
+	clock_t start = clock(); // start a clock 
+		// start a loop 
+		for (a = 10; a < 9999; a = a + 1) {
 		printf("value of a: %d\n", a);
 	}
 
 	clock_t stop = clock();
 	double elapsed = (double) (stop - start) * 1000.0 / CLOCKS_PER_SEC;
-    printf("Time elapsed in ms: %f", elapsed);
+    printf("Time elapsed in ms: %f", elapsed);  // print the elapsed time
 
 	while(1) {
 
@@ -29,11 +30,11 @@ int main(int argc, char **argv) {
 		PAD_ScanPads();
 
 		int buttonsDown = PAD_ButtonsDown(0);
-		
+		// i have no idea why this is here 
 		if( buttonsDown & PAD_BUTTON_A ) {
 			printf("Button A pressed.\n");
 		}
-
+	// return to menu if start is pressed
 		if (buttonsDown & PAD_BUTTON_START) {
 			exit(0);
 		}
