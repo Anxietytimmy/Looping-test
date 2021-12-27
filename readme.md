@@ -1,6 +1,7 @@
 ## Looping test homebrew for multiple consoles
 1. Currently supported
    - ds/dsi 
+   - 2ds/new 2ds 
    - 3ds/new 3ds 
    - Wii
    - Gamecube
