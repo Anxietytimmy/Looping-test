@@ -39,7 +39,7 @@ int main(int argc, char* argv[])
        }
     }
     // add this in case the loop doesnt work 
-    printf("endloop")
+    printf("endloop");
     // Main loop
     while (appletMainLoop())
     {
