@@ -15,11 +15,11 @@ int main(int argc, char* argv[])
 	for( a = 1; a <9999 ; a = a + 1 ){
       printf("value of a: %d\n", a);
    }
-
+	// This is supposed to print the time the loop took, but for some reason it doesn't and just returns a 0
  	clock_t stop = clock();
     double elapsed = (double)(stop - start) * 1000.0 / CLOCKS_PER_SEC;
     printf("Time elapsed in ms: %f", elapsed);
-// im almost certain this doesn't work but im dumb so eh
+
 	// Main loop
 	while (aptMainLoop())
 	{

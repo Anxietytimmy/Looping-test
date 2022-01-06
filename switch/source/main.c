@@ -12,12 +12,8 @@
 int main(int argc, char* argv[])
 {
     // This example uses a text console, as a simple way to output text to the screen.
-    // If you want to write a software-rendered graphics application,
-    //   take a look at the graphics/simplegfx example, which uses the libnx Framebuffer API instead.
-    // If on the other hand you want to write an OpenGL based application,
-    //   take a look at the graphics/opengl set of examples, which uses EGL instead.
     consoleInit(NULL);
-
+    // int a variable for the loop 
     int a;
 
     // Configure our supported input layout: a single player with standard controller styles
@@ -26,11 +22,9 @@ int main(int argc, char* argv[])
     // Initialize the default gamepad (which reads handheld mode inputs as well as the first connected controller)
     PadState pad;
     padInitializeDefault(&pad);
-
-    // Other initialization goes here. As a demonstration, we print hello world.
-    printf("Hello World!\n");
+    // print A int text
     printf("Press A to start looping\n");            
-
+    // Try to get an imput with A, and if pressed, start a loop from 1 to 9999
     padUpdate(&pad);
     u64 kDown = padGetButtonsDown(&pad);
     if(kDown & HidNpadButton_A);{    
@@ -53,8 +47,6 @@ int main(int argc, char* argv[])
 
         if (kDown & HidNpadButton_Plus)
             break; // break in order to return to hbmenu
-
-        // Your code goes here
 
         // Update the console, sending a new frame to the display
         consoleUpdate(NULL);
