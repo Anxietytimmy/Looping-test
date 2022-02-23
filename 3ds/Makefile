@@ -32,12 +32,21 @@ include $(DEVKITARM)/3ds_rules
 #     - <libctru folder>/default_icon.png
 #---------------------------------------------------------------------------------
 TARGET		:=	$(notdir $(CURDIR))
-BUILD		:=	build
+BUILD		:=	builds
 SOURCES		:=	source
 DATA		:=	data
 INCLUDES	:=	include
 GRAPHICS	:=	gfx
 GFXBUILD	:=	$(BUILD)
+
+APP_TITLE			:= Looping test (800px)
+APP_DESCRIPTION		:= Simple Loop for 3ds using 800px display mode 
+APP_AUTHOR			:= Clunker_Blunker
+VERSION_MAJOR		:= 0
+VERSION_MINOR		:= 0
+VERSION_MICRO		:= 2
+
+
 #ROMFS		:=	romfs
 #GFXBUILD	:=	$(ROMFS)/gfx
 
