@@ -9,7 +9,7 @@ int main(int argc, char* argv[])
 	int a;
 	gfxInitDefault();
 	consoleInit(GFX_TOP, NULL);
-	//There is a wide mode toggle in the 3ds version, but because 800px doesn't work on 2ds, im making this version 
+	// 800px is enabled by default in the 3ds version, so 400px is needed for 2ds
  	clock_t start = clock(); // start a clock (almost 100% certain this is broken)
 	// le loop below 
 	for( a = 1; a <9999 ; a = a + 1 ){

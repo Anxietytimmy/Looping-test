@@ -28,6 +28,8 @@ int main(int argc, char* argv[])
     padUpdate(&pad);
     u64 kDown = padGetButtonsDown(&pad);
     if(kDown & HidNpadButton_A);{    
+        sleep(1);
+        clrscr();
         for( a = 1; a < 9999; a = a + 1 ){
             printf("value of a: %d\n", a);
        }
