@@ -1,7 +1,6 @@
 
 #include <nds.h>
 #include <stdio.h>
-#include <time.h>
 //---------------------------------------------------------------------------------
 int main(void) {
 //---------------------------------------------------------------------------------
@@ -21,18 +20,10 @@ int main(void) {
 
 	// select a console to print to 
 	consoleSelect(&topScreen);
-	// Start a clock
-	clock_t start = clock();
 	// start the loop 
     for( a = 1; a < 9999; a = a + 1 ){
       printf("value of a: %d\n", a);
    }
-	// stop the clock
-	clock_t stop = clock();
-    double elapsed = (double)(stop - start) * 1000.0 / CLOCKS_PER_SEC;
-	// print the time that the loop took (currently broken)
-    printf("Time elapsed in ms: %f", elapsed);
-
 
 	while(1) {
 		swiWaitForVBlank();
