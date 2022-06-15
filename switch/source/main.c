@@ -29,7 +29,7 @@ int main(int argc, char* argv[])
     u64 kDown = padGetButtonsDown(&pad);
     if(kDown & HidNpadButton_A);{    
         sleep(1);
-        clrscr();
+        system("cls");
         for( a = 1; a < 9999; a = a + 1 ){
             printf("value of a: %d\n", a);
        }
